@@ -127,3 +127,28 @@ Response components:
   "message": "Sucessfully deleted"
 }
 ```
+
+### Get all albums of a specific artist based on artistId
+
+Request components:
+
+- Method: GET
+- URL: /artists/:artistId/albums example `artists/1/albums`
+- Headers: Content-Type: application/json
+- Body: none
+
+Response components:
+
+- Status code: 200
+- Headers: Content-Type: application/json
+- Body:
+
+```json
+[
+  {
+    "name": "Stadium Arcadium",
+    "albumId": 1,
+    "artistId": 1
+  }
+]
+```
